@@ -1,0 +1,197 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background: rgb(27,42,73);
+	background: radial-gradient(circle, rgba(27,42,73,1) 0%, rgba(10,17,31,1) 100%);
+}
+.padre{
+	display: flex;
+	flex-flow: column nowrap;
+}
+	.header{
+		background: rgb(167,176,179);
+		background: linear-gradient(0deg, rgba(167,176,179,1) 0%, rgba(201,209,211,1) 35%, rgba(252,252,252,1) 100%);
+		box-shadow: 0px 2px .5 gray;
+		padding: 20px 0px;
+		margin-bottom: 20px;
+	}
+		.menu{
+			display: flex;
+			flex-flow: row  nowrap;
+			align-items: center;
+		}
+		.menu a{
+			text-decoration: none;
+			font-style: italic;
+			font-size: 30px;
+		}
+			.logo{
+				flex: 1 1 auto;
+				text-align: center;			
+			}
+			.cabecera{
+				flex: 4 1 auto;
+				text-align: center;
+				font-size: 30px;
+				font-family: monospace;				
+				letter-spacing: 2px;				
+			}
+	.section{
+		display: flex;
+		flex-flow: row nowrap;				
+	}
+		.articulos{
+			flex: 1 1 auto;
+			order: 2;
+			margin: 0px 10px;
+		}
+			.articulo{
+				display: flex;
+				justify-content: center;
+				flex-flow: row nowrap;
+				padding: 20px;
+				margin: 0px 0px 10px 0px;
+				background: rgb(88,106,147);
+				background: radial-gradient(circle, rgba(88,106,147,1) 0%, rgba(70,88,129,1) 68%);
+				border-radius: 50%;
+			}
+				.imagen{
+					width: 120px;
+
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					margin: 20px;
+					box-shadow: 2px 2px 18px #08142f;
+				}
+				.contenedor, .agregar{
+					display: flex;
+					flex-flow: column nowrap;					
+				}
+					.agregar input, .agregar textarea, .agregar select{
+						padding: 5px;
+						margin-bottom: 10px;
+					}
+					.titulo{
+						background: rgb(167,176,179);
+						background: linear-gradient(0deg, rgba(167,176,179,1) 0%, rgba(201,209,211,1) 35%, rgba(252,252,252,1) 100%);
+						text-align: center;
+						padding: 10px 10px;
+						margin-bottom: 10px;
+						border-radius: 10px;
+						box-shadow: 2px 2px 18px #08142f;
+						font-weight: bold;
+					}
+					.desc{
+						text-align: center;
+						font-style: italic;
+						border: ridge;
+						width: 500px;
+						margin-bottom: 10px;
+						padding: 10px;
+						color: #cddcff;
+						background-color: #465881;
+					}
+					.d-prest{
+						display: flex;
+						margin-bottom: 10px;
+						color: #cddcff;
+					}
+						.d-estado, .d-persona{
+							font-weight: bold;
+						}
+						.estado{
+							margin: 0px 20px 0px 5px;
+						}
+						.persona{
+							margin: 0px 20px 0px 5px;
+						}
+					.crud{
+						display: flex;
+						flex: 1 1 auto;
+						justify-content: center;
+					}
+						.crud input{
+							padding: 5px;
+							margin: 0px 10px;
+						}
+		.aside{
+			background: rgb(48,60,87);
+			background: linear-gradient(0deg, rgba(48,60,87,1) 0%, rgba(70,88,129,1) 54%);
+			flex: .0002 1 auto;
+			justify-content: center;
+			text-align: center;
+			border-radius: 5%;
+			order: 1;
+			/*align-items: stretch;
+			display: flex;
+			flex-flow: column nowrap;*/
+			padding: 20px; 
+			margin: 0px 10px;
+			height: 500px;
+		}
+			.titulo2{
+				text-align: center;
+				padding: 10px 10px;
+				margin-bottom: 10px;
+				border-radius: 10px;
+				color: #cddcff;
+				font-weight: bold;				
+			}
+			.buscar{
+				margin: 20px 0px 20px 0px;
+			}
+				.buscar input{
+					padding: 5px;
+					margin-right: 10px;
+					border-radius: 2px;
+				}
+			.buscar2{
+				margin: 20px 0px;
+			}
+				.buscar2 select, .buscar3 select{
+					padding: 5px;
+					margin-right: 10px;
+					border-radius: 2px;
+				}
+			.buscar3{
+				margin: 20px 0px;
+			}
+				.buscar2 input, .buscar3 input, .buscar4 input{
+					padding: 5px;
+					border-radius: 2px;
+				}
+			.buscar4{
+				margin: 20px 0px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				justify-content: center;	
+			}
+				.buscar4 input{
+					margin: 0px 10px;
+				}
+			.cantidad{
+				margin-top: 20px;
+				color: #cddcff;
+			}
+				.l-cant{
+					font-weight: bold;					
+				}
+	.footer{
+		background-color: #000;
+	}
+		.pie{
+			background-color: yellow;
+		}
+
+textarea{
+	width: 300px;
+	height: 100px;
+}
+.o-color{
+	color: #cddcff;
+}
